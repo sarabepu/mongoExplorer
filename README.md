@@ -19,7 +19,7 @@ The user can directly visit the website (hosted in HerokuApp)  [here](https://mo
 
 If you want to deploy the project locally folloy this instructions:
 
- - Install node.js
+ - Install node.js and mongodb 
  - Clone the repository
  - Create enviromental variable named "hostdb" with your Mongo connection URI. Or change variable "host" on file "db/MongoUtils.js" for  your Mongo connection URI
  - Run the command for isntalling the dependencies `npm install`

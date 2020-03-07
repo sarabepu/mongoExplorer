@@ -31,7 +31,7 @@ const displayCollections = (list) => {
   selectorOption.appendChild(op);
 
   const button = document.createElement("button");
-  button.className = "btn btn-primary";
+  button.className = "btn btn-outline-info";
   button.type = "submit";
   button.textContent = "Fetch";
   form.appendChild(button);
@@ -49,10 +49,15 @@ const displayCollections = (list) => {
 
 
   const colSearch = document.querySelector("#col-form");
+  // eslint-disable-next-line no-undef
   colSearch.addEventListener("submit", onFetch);
 
 };
 
+
 const dBSearch = document.querySelector("#formDB");
 dBSearch.addEventListener("submit", onOpen);
+
+
+
 let dbName = "";

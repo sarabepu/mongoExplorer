@@ -10,36 +10,17 @@
 
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-8">
 
-        <h1 style="text-align: center;">DataBase Explorer</h1>
-        <div id="databases">
-          <h2>Databases</h2>
-          <form id="formDB">
+    <h1 style="text-align: center;">Mongo Explorer</h1>
+    <p>Please insert our Mongo URI to connect</p>
+    <form action="/db">
+      <input type="text" class="form-control" id="mongo-input" name="mongo" 
+      placeholder="URI"> </input>
 
-            <p>Please choose a database</p>
-            <select name="databases" id="db-select">
-
-              <option value="">--Please choose an option--</option>
-              <% databases.forEach(  database=>{ %>
-              <option value=<%= database.name %>><%= database.name %></option>
-
-
-              <% }) %>
-            </select>
-            <button class="btn btn-primary" type="submit">Open</button>
-          </form>
-        </div>
-        <div id="collections">
-        </div>
-        <div id="rows">
-        </div>
-      </div>
-    </div>
+      <button class="btn btn-outline-info" type="submit">Connect</button>
+    </form>
+    
   </div>
-  <script src="/javascripts/index.js"></script>
-  <script src="/javascripts/collections.js"></script>
 </body>
 
 </html>

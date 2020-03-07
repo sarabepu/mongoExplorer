@@ -1,17 +1,18 @@
 const MongoClient = require("mongodb").MongoClient;
 
 function MongoUtils() {
-  const mu = {},
-    host = process.env.hostdb;
+  const mu = {};
+  let hostD="";
   mu.connect = () => {
-    const client = new MongoClient(host, {
+    const client = new MongoClient(hostD, {
       useUnifiedTopology: true
     });
     return client.connect();
   };
 
 
-  mu.findDatabases = () => {
+  mu.findDatabases = (host) => {
+    hostD=host;
     return mu.connect()
       .then(client => {
         return client
