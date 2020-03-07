@@ -20,8 +20,8 @@ router.get("/db/:dbName", (req, res) => {
     });
 });
 
-router.get("/db/:dbName/col/:colName", (req, res) => {
-  mu.findRowsCol(req.params.dbName, req.params.colName)
+router.get("/db/:dbName/col/:colName/:docs", (req, res) => {
+  mu.findRowsCol(req.params.dbName, req.params.colName, req.params.docs)
     .then(collections => {
       res.json(collections);
     });
@@ -29,6 +29,7 @@ router.get("/db/:dbName/col/:colName", (req, res) => {
 
 router.post("/db/:dbName/col/:colName", (req, res) => {
   mu.insertRow(req.params.dbName, req.params.colName, req.body)
+    // eslint-disable-next-line no-unused-vars
     .then((dontcare) => mu.findRowsCol(req.params.dbName, req.params.colName))
     .then(collections => {
       res.json(collections);

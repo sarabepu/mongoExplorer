@@ -37,7 +37,7 @@ function MongoUtils() {
     }
     );
 
-  mu.findRowsCol= (dbName,colName) =>
+  mu.findRowsCol= (dbName,colName,number) =>
   
     mu.connect().then( client =>
     {
@@ -46,7 +46,7 @@ function MongoUtils() {
       return col
         .find()
         .sort({ $natural: -1 })
-        .limit(20)
+        .limit(parseInt(number))
         .toArray()
         .finally(() => client.close());
     }

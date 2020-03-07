@@ -82,7 +82,8 @@ const onFetch = (e) => {
 
   e.preventDefault();
   colName = document.querySelector("#col-selector").value;
-  fetch(`/db/${dbName}/col/${colName}`)
+  docs= document.querySelector("#number-docs").value;
+  fetch(`/db/${dbName}/col/${colName}/${docs}`)
     .then(res => res.json())
     .then(displayRows);
 

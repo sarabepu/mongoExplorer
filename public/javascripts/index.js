@@ -20,6 +20,11 @@ const displayCollections = (list) => {
   collec.textContent = "Collections";
   form.appendChild(collec);
 
+  
+  const collecp = document.createElement("p");
+  collecp.textContent = "Please choose a collection";
+  form.appendChild(collecp);
+
   const selectorOption = document.createElement("select");
   selectorOption.name = "collections";
   selectorOption.id = "col-selector";
@@ -29,6 +34,22 @@ const displayCollections = (list) => {
   op.value="";
   op.textContent= "--Please choose an option--";
   selectorOption.appendChild(op);
+
+
+  const input = document.createElement("input");
+  input.type="number";
+  input.id="number-docs";
+  input.class="form-control";
+  input.value=20;
+
+  const label= document.createElement("label");
+  label.for="number-docs";
+  label.textContent="# documents";
+
+  const forG= document.createElement("div");
+  forG.className="form-group";
+  form.appendChild(label);
+  form.appendChild(input);
 
   const button = document.createElement("button");
   button.className = "btn btn-outline-info";
