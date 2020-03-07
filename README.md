@@ -9,8 +9,9 @@ It has the following functionalities:
 
 
 - list the databases available
-- list the collections of a database
-- list the first 20 documents of a collection ordered by time.
+- list the collections of a db
+- special feature: Select the number of documents ou want to see in a collection
+- list the first n documents of a collection ordered by time.
 
 
 ## Deployment
@@ -24,6 +25,7 @@ If you want to deploy the project locally folloy this instructions:
  - Run the command for isntalling the dependencies `npm install`
  -  Run the command `npm start`
  - Go to `localhost:3000`on your browser
+ 
 
 
 
