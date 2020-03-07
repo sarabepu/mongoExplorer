@@ -31,4 +31,4 @@ If you want to deploy the project locally folloy this instructions:
 
  ## Screeenshot
 
- ![screenshot](https://i.imgur.com/6EzRs9l.png)
+ ![screenshot](https://i.imgur.com/VLca5GO.png)
