@@ -4,19 +4,18 @@
 Sara Bejarano
 
 ## Description
-Kinofil is an webapp for people that enjoys watching movies. 
+DataBase explorer is a webapp for exploring databases, collections and inserting in the collections. 
 It has the following functionalities:
 
-- Create an account and login
-- Filter a movie list on name
-- See the description of a movie
-- Add the movie to favorite list
-- Add the movie to watched list
-- Add a review
+
+- list the databases available
+- list the collections of a database
+- list the first 20 documents of a collection ordered by time.
+
 
 ## Deployment
 
-The user can directly visit the website (hosted in HerokuApp)  [here](https://kinofil.herokuapp.com)
+The user can directly visit the website (hosted in HerokuApp)  [here](https://mongo-explorer1.herokuapp.com/)
 
 If you want to deploy the project locally folloy this instructions:
 
@@ -29,9 +28,4 @@ If you want to deploy the project locally folloy this instructions:
 
  ## Screeenshot
 
- ![screenshot](https://i.imgur.com/zR9OH3u.png)
-
- ![screenshot-movies](https://i.imgur.com/Wc9YE2B.png)
-
-
-![screenshot-movie](https://i.imgur.com/G5DPS77.png)
+ ![screenshot](https://i.imgur.com/6EzRs9l.png)
